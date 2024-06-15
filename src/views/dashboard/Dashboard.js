@@ -56,30 +56,30 @@ import MainChart from './MainChart'
 
 const Dashboard = () => {
   const progressExample = [
-    { title: 'Visits', value: '29.703 Users', percent: 40, color: 'success' },
-    { title: 'Unique', value: '24.093 Users', percent: 20, color: 'info' },
-    { title: 'Pageviews', value: '78.706 Views', percent: 60, color: 'warning' },
-    { title: 'New Users', value: '22.123 Users', percent: 80, color: 'danger' },
-    { title: 'Bounce Rate', value: 'Average Rate', percent: 40.15, color: 'primary' },
+    { title: 'Visitas', value: '29.703 Clientes', percent: 40, color: 'success' },
+    { title: 'Unicos', value: '24.093 Clientes', percent: 20, color: 'info' },
+    { title: 'Vistas de la Página', value: '78.706 Vistas', percent: 60, color: 'warning' },
+    { title: 'Nuevos Clientes', value: '22.123 Clientes', percent: 80, color: 'danger' },
+    { title: 'Porcentaje de Rebote', value: 'Tasa Promedio', percent: 40.15, color: 'primary' },
   ]
 
   const progressGroupExample1 = [
-    { title: 'Monday', value1: 34, value2: 78 },
-    { title: 'Tuesday', value1: 56, value2: 94 },
-    { title: 'Wednesday', value1: 12, value2: 67 },
-    { title: 'Thursday', value1: 43, value2: 91 },
-    { title: 'Friday', value1: 22, value2: 73 },
-    { title: 'Saturday', value1: 53, value2: 82 },
-    { title: 'Sunday', value1: 9, value2: 69 },
+    { title: 'Lunes', value1: 34, value2: 78 },
+    { title: 'Martes', value1: 56, value2: 94 },
+    { title: 'Miercoles', value1: 12, value2: 67 },
+    { title: 'Jueves', value1: 43, value2: 91 },
+    { title: 'Viernes', value1: 22, value2: 73 },
+    { title: 'Sabado', value1: 53, value2: 82 },
+    { title: 'Domingo', value1: 9, value2: 69 },
   ]
 
   const progressGroupExample2 = [
-    { title: 'Male', icon: cilUser, value: 53 },
-    { title: 'Female', icon: cilUserFemale, value: 43 },
+    { title: 'Masculino', icon: cilUser, value: 53 },
+    { title: 'Femenino', icon: cilUserFemale, value: 43 },
   ]
 
   const progressGroupExample3 = [
-    { title: 'Organic Search', icon: cibGoogle, percent: 56, value: '191,235' },
+    { title: 'Busqueda Organica', icon: cibGoogle, percent: 56, value: '191,235' },
     { title: 'Facebook', icon: cibFacebook, percent: 15, value: '51,223' },
     { title: 'Twitter', icon: cibTwitter, percent: 11, value: '37,564' },
     { title: 'LinkedIn', icon: cibLinkedin, percent: 8, value: '27,319' },
@@ -89,14 +89,14 @@ const Dashboard = () => {
     {
       avatar: { src: avatar1, status: 'success' },
       user: {
-        name: 'Yiorgos Avraamu',
-        new: true,
-        registered: 'Jan 1, 2023',
+        name: 'Hugo Monzon',
+        new: false,
+        registered: 'Enero 14, 2023',
       },
       country: { name: 'USA', flag: cifUs },
       usage: {
-        value: 50,
-        period: 'Jun 11, 2023 - Jul 10, 2023',
+        value: 75,
+        period: 'Enero 14, 2023 - Junio 14, 2023',
         color: 'success',
       },
       payment: { name: 'Mastercard', icon: cibCcMastercard },
@@ -105,14 +105,14 @@ const Dashboard = () => {
     {
       avatar: { src: avatar2, status: 'danger' },
       user: {
-        name: 'Avram Tarasios',
+        name: 'Paolo Mendoza',
         new: false,
-        registered: 'Jan 1, 2023',
+        registered: 'Marzo 7, 2023',
       },
       country: { name: 'Brazil', flag: cifBr },
       usage: {
         value: 22,
-        period: 'Jun 11, 2023 - Jul 10, 2023',
+        period: 'Marzo 7, 2023 - Junio 14, 2023',
         color: 'info',
       },
       payment: { name: 'Visa', icon: cibCcVisa },
@@ -120,11 +120,11 @@ const Dashboard = () => {
     },
     {
       avatar: { src: avatar3, status: 'warning' },
-      user: { name: 'Quintin Ed', new: true, registered: 'Jan 1, 2023' },
+      user: { name: 'Elper Verso Morales', new: false, registered: 'Febrero 11, 2023' },
       country: { name: 'India', flag: cifIn },
       usage: {
         value: 74,
-        period: 'Jun 11, 2023 - Jul 10, 2023',
+        period: 'Febrero 11, 2023 - Junio 14, 2024',
         color: 'warning',
       },
       payment: { name: 'Stripe', icon: cibCcStripe },
@@ -132,11 +132,11 @@ const Dashboard = () => {
     },
     {
       avatar: { src: avatar4, status: 'secondary' },
-      user: { name: 'Enéas Kwadwo', new: true, registered: 'Jan 1, 2023' },
+      user: { name: 'John Cena', new: false, registered: 'Junio 11, 2023' },
       country: { name: 'France', flag: cifFr },
       usage: {
         value: 98,
-        period: 'Jun 11, 2023 - Jul 10, 2023',
+        period: 'Junio 11, 2023 - Junio 14, 2024',
         color: 'danger',
       },
       payment: { name: 'PayPal', icon: cibCcPaypal },
@@ -145,14 +145,14 @@ const Dashboard = () => {
     {
       avatar: { src: avatar5, status: 'success' },
       user: {
-        name: 'Agapetus Tadeáš',
+        name: 'Filemon Ramirez',
         new: true,
-        registered: 'Jan 1, 2023',
+        registered: 'Julo 3, 2023',
       },
       country: { name: 'Spain', flag: cifEs },
       usage: {
         value: 22,
-        period: 'Jun 11, 2023 - Jul 10, 2023',
+        period: 'Julio 3, 2023 - Junio 14, 2024',
         color: 'primary',
       },
       payment: { name: 'Google Wallet', icon: cibCcApplePay },
@@ -161,14 +161,14 @@ const Dashboard = () => {
     {
       avatar: { src: avatar6, status: 'danger' },
       user: {
-        name: 'Friderik Dávid',
+        name: 'Lalo Cota',
         new: true,
-        registered: 'Jan 1, 2023',
+        registered: 'Abril 1, 2024',
       },
       country: { name: 'Poland', flag: cifPl },
       usage: {
         value: 43,
-        period: 'Jun 11, 2023 - Jul 10, 2023',
+        period: 'Abril 1, 2023 - Junio 14, 2024',
         color: 'success',
       },
       payment: { name: 'Amex', icon: cibCcAmex },
@@ -184,16 +184,16 @@ const Dashboard = () => {
           <CRow>
             <CCol sm={5}>
               <h4 id="traffic" className="card-title mb-0">
-                Traffic
+                Tráfico
               </h4>
-              <div className="small text-body-secondary">January - July 2023</div>
+              <div className="small text-body-secondary">Enero - Julio 2024</div>
             </CCol>
             <CCol sm={7} className="d-none d-md-block">
               <CButton color="primary" className="float-end">
                 <CIcon icon={cilCloudDownload} />
               </CButton>
               <CButtonGroup className="float-end me-3">
-                {['Day', 'Month', 'Year'].map((value) => (
+                {['Día', 'Mes', 'Año'].map((value) => (
                   <CButton
                     color="outline-secondary"
                     key={value}
@@ -237,21 +237,21 @@ const Dashboard = () => {
       <CRow>
         <CCol xs>
           <CCard className="mb-4">
-            <CCardHeader>Traffic {' & '} Sales</CCardHeader>
+            <CCardHeader>Tráfico {' & '} Ventas</CCardHeader>
             <CCardBody>
               <CRow>
                 <CCol xs={12} md={6} xl={6}>
                   <CRow>
                     <CCol xs={6}>
                       <div className="border-start border-start-4 border-start-info py-1 px-3">
-                        <div className="text-body-secondary text-truncate small">New Clients</div>
+                        <div className="text-body-secondary text-truncate small">Nuevos Clientes</div>
                         <div className="fs-5 fw-semibold">9,123</div>
                       </div>
                     </CCol>
                     <CCol xs={6}>
                       <div className="border-start border-start-4 border-start-danger py-1 px-3 mb-3">
                         <div className="text-body-secondary text-truncate small">
-                          Recurring Clients
+                          Clientes Recurrentes
                         </div>
                         <div className="fs-5 fw-semibold">22,643</div>
                       </div>
@@ -274,13 +274,13 @@ const Dashboard = () => {
                   <CRow>
                     <CCol xs={6}>
                       <div className="border-start border-start-4 border-start-warning py-1 px-3 mb-3">
-                        <div className="text-body-secondary text-truncate small">Pageviews</div>
+                        <div className="text-body-secondary text-truncate small">Vistas de Página</div>
                         <div className="fs-5 fw-semibold">78,623</div>
                       </div>
                     </CCol>
                     <CCol xs={6}>
                       <div className="border-start border-start-4 border-start-success py-1 px-3 mb-3">
-                        <div className="text-body-secondary text-truncate small">Organic</div>
+                        <div className="text-body-secondary text-truncate small">Organico</div>
                         <div className="fs-5 fw-semibold">49,123</div>
                       </div>
                     </CCol>
@@ -329,15 +329,12 @@ const Dashboard = () => {
                     <CTableHeaderCell className="bg-body-tertiary text-center">
                       <CIcon icon={cilPeople} />
                     </CTableHeaderCell>
-                    <CTableHeaderCell className="bg-body-tertiary">User</CTableHeaderCell>
+                    <CTableHeaderCell className="bg-body-tertiary">Cliente</CTableHeaderCell>
+                    
+                    <CTableHeaderCell className="bg-body-tertiary">Seguimiento</CTableHeaderCell>
                     <CTableHeaderCell className="bg-body-tertiary text-center">
-                      Country
+                      Método de Pago
                     </CTableHeaderCell>
-                    <CTableHeaderCell className="bg-body-tertiary">Usage</CTableHeaderCell>
-                    <CTableHeaderCell className="bg-body-tertiary text-center">
-                      Payment Method
-                    </CTableHeaderCell>
-                    <CTableHeaderCell className="bg-body-tertiary">Activity</CTableHeaderCell>
                   </CTableRow>
                 </CTableHead>
                 <CTableBody>
@@ -353,9 +350,7 @@ const Dashboard = () => {
                           {item.user.registered}
                         </div>
                       </CTableDataCell>
-                      <CTableDataCell className="text-center">
-                        <CIcon size="xl" icon={item.country.flag} title={item.country.name} />
-                      </CTableDataCell>
+                      
                       <CTableDataCell>
                         <div className="d-flex justify-content-between text-nowrap">
                           <div className="fw-semibold">{item.usage.value}%</div>
@@ -368,10 +363,7 @@ const Dashboard = () => {
                       <CTableDataCell className="text-center">
                         <CIcon size="xl" icon={item.payment.icon} />
                       </CTableDataCell>
-                      <CTableDataCell>
-                        <div className="small text-body-secondary text-nowrap">Last login</div>
-                        <div className="fw-semibold text-nowrap">{item.activity}</div>
-                      </CTableDataCell>
+                      
                     </CTableRow>
                   ))}
                 </CTableBody>

@@ -26,6 +26,37 @@ const _nav = [
       text: 'NEW',
     },
   },
+
+  {
+    component: CNavTitle,
+    name: 'Perspectivas',
+  },
+  {
+    component: CNavItem,
+    name: 'Financiera',
+    to: '/charts/financial',
+    icon: <CIcon icon={cilNotes} customClassName="nav-icon" />,
+  },
+  {
+    component: CNavItem,
+    name: 'Clientes',
+    to: '/charts/costumer',
+    icon: <CIcon icon={cilStar} customClassName="nav-icon" />,
+  },
+  {
+    component: CNavItem,
+    name: 'Procesos Internos',
+    to: '/charts/processes',
+    icon: <CIcon icon={cilChartPie} customClassName="nav-icon" />,
+  },
+  {
+    component: CNavItem,
+    name: 'Aprendizaje y Crecimiento',
+    to: '/charts/learning',
+    icon: <CIcon icon={cilPuzzle} customClassName="nav-icon" />,
+  },
+  
+  // completar
   {
     component: CNavTitle,
     name: 'Theme',
@@ -202,7 +233,7 @@ const _nav = [
   {
     component: CNavItem,
     name: 'Charts',
-    to: '/charts',
+    to: '/charts/chart',
     icon: <CIcon icon={cilChartPie} customClassName="nav-icon" />,
   },
   {
@@ -305,6 +336,7 @@ const _nav = [
     href: 'https://coreui.io/react/docs/templates/installation/',
     icon: <CIcon icon={cilDescription} customClassName="nav-icon" />,
   },
+ //
 ]
 
 export default _nav

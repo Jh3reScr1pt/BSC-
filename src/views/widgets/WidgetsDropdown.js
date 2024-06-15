@@ -50,7 +50,7 @@ const WidgetsDropdown = (props) => {
               </span>
             </>
           }
-          title="Users"
+          title="Clientes"
           action={
             <CDropdown alignment="end">
               <CDropdownToggle color="transparent" caret={false} className="text-white p-0">
@@ -140,7 +140,7 @@ const WidgetsDropdown = (props) => {
               </span>
             </>
           }
-          title="Income"
+          title="Ingreso"
           action={
             <CDropdown alignment="end">
               <CDropdownToggle color="transparent" caret={false} className="text-white p-0">
@@ -229,7 +229,7 @@ const WidgetsDropdown = (props) => {
               </span>
             </>
           }
-          title="Conversion Rate"
+          title="Tasa de Conversión"
           action={
             <CDropdown alignment="end">
               <CDropdownToggle color="transparent" caret={false} className="text-white p-0">
@@ -301,7 +301,7 @@ const WidgetsDropdown = (props) => {
               </span>
             </>
           }
-          title="Sessions"
+          title="Sesiones"
           action={
             <CDropdown alignment="end">
               <CDropdownToggle color="transparent" caret={false} className="text-white p-0">

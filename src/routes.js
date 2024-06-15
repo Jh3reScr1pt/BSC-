@@ -37,6 +37,10 @@ const Select = React.lazy(() => import('./views/forms/select/Select'))
 const Validation = React.lazy(() => import('./views/forms/validation/Validation'))
 
 const Charts = React.lazy(() => import('./views/charts/Charts'))
+const Costumer = React.lazy(() => import('./views/charts/Costumer'))
+const Financial = React.lazy(() => import('./views/charts/Financial'))
+const Learning = React.lazy(() => import('./views/charts/Learning'))
+const Processes = React.lazy(() => import('./views/charts/Processes'))
 
 // Icons
 const CoreUIIcons = React.lazy(() => import('./views/icons/coreui-icons/CoreUIIcons'))
@@ -54,9 +58,11 @@ const Widgets = React.lazy(() => import('./views/widgets/Widgets'))
 const routes = [
   { path: '/', exact: true, name: 'Home' },
   { path: '/dashboard', name: 'Dashboard', element: Dashboard },
+
   { path: '/theme', name: 'Theme', element: Colors, exact: true },
   { path: '/theme/colors', name: 'Colors', element: Colors },
   { path: '/theme/typography', name: 'Typography', element: Typography },
+
   { path: '/base', name: 'Base', element: Cards, exact: true },
   { path: '/base/accordion', name: 'Accordion', element: Accordion },
   { path: '/base/breadcrumbs', name: 'Breadcrumbs', element: Breadcrumbs },
@@ -77,7 +83,13 @@ const routes = [
   { path: '/buttons/buttons', name: 'Buttons', element: Buttons },
   { path: '/buttons/dropdowns', name: 'Dropdowns', element: Dropdowns },
   { path: '/buttons/button-groups', name: 'Button Groups', element: ButtonGroups },
-  { path: '/charts', name: 'Charts', element: Charts },
+
+  { path: '/charts/chart', name: 'Charts', element: Charts },
+  { path: '/charts/financial', name: 'Financial', element: Financial },
+  { path: '/charts/costumer', name: 'Costumer', element: Costumer },
+  { path: '/charts/processes', name: 'Processes', element: Processes },
+  { path: '/charts/learning', name: 'Learning', element: Learning },
+
   { path: '/forms', name: 'Forms', element: FormControl, exact: true },
   { path: '/forms/form-control', name: 'Form Control', element: FormControl },
   { path: '/forms/select', name: 'Select', element: Select },
